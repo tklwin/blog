@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
+    <!-- Include Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,78 +17,119 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 1em 0;
         }
 
         section {
-            padding: 40px;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2, h3 {
+        h1, h2 {
             color: #333;
         }
 
-        .portfolio-item {
-            margin-bottom: 40px;
+        p {
+            line-height: 1.6;
+            color: #666;
         }
 
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ul {
+            list-style: none;
+            padding: 0;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add styles for social media icons */
+        .social-icons {
+            list-style: none;
+            padding: 0;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer & Designer</p>
+        <h1>Thein</h1>
+        <p>IT</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Welcome to my portfolio! I am a passionate web developer and designer with a focus on creating
-            beautiful and functional websites.
+            Welcome to my portfolio! I am a passionate IT with a strong foundation in front-end and back-end technologies.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
         </p>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+        </ul>
+    </section>
 
-        <div class="portfolio-item">
-            <h3>Project 1</h3>
-            <img src="project1.jpg" alt="Project 1">
-            <p>Description of Project 1.</p>
-        </div>
-
-        <div class="portfolio-item">
-            <h3>Project 2</h3>
-            <img src="project2.jpg" alt="Project 2">
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more portfolio items as needed -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>
+            Here are some of my notable projects:
+        </p>
+        <ul>
+            <li>
+                <strong>Project 1:</strong> <a href="#">Project Name 1</a> - Description of the project goes here.
+            </li>
+            <li>
+                <strong>Project 2:</strong> <a href="#">Project Name 2</a> - Description of the project goes here.
+            </li>
+            <!-- Add more projects as needed -->
+        </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <h2>Contact</h2>
+        <p>
+            Let's connect! Feel free to reach out to me via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.
+        </p>
+        <!-- Add social media icons -->
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/c/your-youtube-channel" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <!-- Add more social media icons as needed -->
+        </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Your Name. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
